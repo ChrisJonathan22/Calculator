@@ -2,9 +2,16 @@
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
 }
 
-#container h1 {
+#title-container h1 {
     text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -12,8 +19,11 @@
 }
 
 #calc-parent {
-    width: 50%;
-    margin: auto;
+    text-align: center;
+}
+
+#container {
+    display: inline-block;
 }
 
 .calc-btn {
@@ -44,11 +54,12 @@
 }
 
 #calc-zero {
-    width: 51px;
+    width: 52.66666667px;
+    border-radius: 0 0 0 7px;
 }
 
 #calc-clear {
-    width: 51px;
+    width: 52.66666667px;
 }
 
 #calc-display-val {
@@ -67,4 +78,8 @@
 .calc-btn-operator {
     background-color: orange;
     color: white;
+}
+
+#calc-equals {
+    border-radius: 0 0 7px 0;
 }
