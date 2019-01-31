@@ -92,6 +92,8 @@ clearBtn.addEventListener('click', () => {
     pendingVal = undefined;
     evalStringArray = [];
     displayValElement.innerTEXT = displayVal;
+    console.log("It works...");
+    
 }, false);
 
 backspaceBtn.addEventListener('click', () => {
